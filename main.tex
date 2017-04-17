@@ -1,0 +1,107 @@
+\documentclass[16pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{dirtytalk}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{float}
+\hypersetup{colorlinks=true, linkcolor=black}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{siunitx}
+\usepackage{graphics}
+
+\usepackage{silence}
+\WarningFilter{latex}{Command \InputIfFileExists}
+\usepackage{fontspec}
+
+%%% For language switching -- like babel, but for xelatex
+\usepackage{polyglossia}
+
+\setmainlanguage{english}
+\setotherlanguages{hindi,sanskrit} %% or other languages
+
+\newfontfamily\devanagarifont[Script=Devanagari]{Lohit Devanagari}
+
+\usepackage[boxed]{algorithm2e}
+% \usepackage[nottoc]{tocbibind}
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\bibname{References}  % to rename bibliography to reference
+\usepackage[document]{ragged2e}
+\bibliographystyle{plain}
+% \title{SeminarReport}
+% \author{anand.nitb19 }
+% \date{April 2017}
+%\geometry{margin=1in}
+\begin{document}
+%\setstretch{1.5}
+\begin{center}
+    \rule[0.5ex]{\linewidth}{2pt}\vspace*{-\baselineskip}\vspace*{3.2pt}
+    \rule[0.5ex]{\linewidth}{1pt}\\[\baselineskip]
+    {\LARGE Machine Translation and its Evaluation }\\[2mm]
+    \rule[0.5ex]{\linewidth}{1pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+    \rule[0.5ex]{\linewidth}{2pt}\\
+    \vspace{6.5mm}
+    {\large \textbf{A Seminar Report}}\\[5pt]
+    {\large \textit{Submitted in partial fulfillment of requirements for the degree of}}\\[5pt]
+    {\large \textbf{Master of Technology}}\\
+    \vspace{6.5mm}
+    {\large By}\\
+    \vspace{3mm}
+    {\large\textbf{Anand Namdev}}\\
+    {\large\textbf{Roll Num: 163050068}}\\
+    \vspace{6.5mm}
+    {\large \textit{under the guidance of }}\\[5pt]
+    {\large\textbf{Prof. Pushpak Bhattacharyya}}\\
+    \vspace{11mm}
+    \includegraphics[scale=0.6]{Images/iitblogo.jpeg}\\
+    \vspace{6mm}
+    {\large Department of Computer Science and Engineering\\
+    \textsc{Indian Institute of Technology, Bombay}}\\
+    \vspace{11mm}
+    \vspace{9mm}
+    {\large\textsc{April, 2017}}
+    \vspace{12mm}
+\end{center}
+
+\newpage
+\begin{center}
+    \section*{\textbf{\LARGE Acknowledgement}}
+    \justify
+    I am extremely thankful to my seminar guide \textbf{Prof. Pushpak Bhattacharrya} for helping me through out the research seminar. All the seminar meetings have been very crucial in resolving doubts related to the Machine Translation. I can't thank enough my parents for their constant encouragement and support. I am also very grateful to my peers \textbf{Sanket Gandhare} and \textbf{Ajay Gupta} for all the discussions held through out the semester. 
+\end{center}
+
+\newpage
+\begin{center}
+    \section*{\textbf{\LARGE Abstract}}
+    \justify
+    Natural Language Processing is one of the branch of Artificial Intelligence which involves large amount of processing of human language. Machine Translation is one of the most prominent problem of Natural Language Processing. It is a old and an important machine learning, because there is large amount of data which can't be translated by human translators. It has evolved from traditional Rule based Machine Translation (RBMT) to Statistical Machine Translation (SMT) to very sophisticated Neural Machine Translation (NMT). This seminar reports explores the types of machine translation techniques used, the pros and cons of using any method and finally the evaluation of a Machine Translation System.
+\end{center}
+ 
+
+
+    \tableofcontents
+    \addcontentsline{toc}{section}{Acknowledgement}
+    \addcontentsline{toc}{section}{Abstract}
+    \newpage
+    \listoffigures
+    \newpage
+    \listoftables
+    \newpage
+    \include{Data/chapter1}
+    \include{Data/chapter2}
+    \include{Data/chapter3}
+    \include{Data/chapter4}
+    \include{Data/chapter5}
+    
+    \bibliographystyle{plain} 
+    \bibliography{ref}
+    
+    
+
+\end{document}
